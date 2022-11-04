@@ -28,26 +28,29 @@ THEN I am presented with a responsive layout that adapts to my viewport
         <h1>Liibaan Halane</h1>
         <!-- title, nav with section links -->
         <nav>
+            <h1>My Portfolio</h1>
             <a href="#aboutme">About me!</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact me!</a>
         </nav>
     </header>
-    <article id="About me">
+    <main>
+    <article id="aboutme" class="boxes">
         <!-- first, self portrit, next an about me -->
         <h2>About me!</h2>
         <img src="./assets/liibaan.jpg" alt="A photo of Liibaan">
         <p>I am a student of the first UNB coding bootcamp! Residing in Fredricton,</p>
     </article>
-    <aside id="projects">
+    <aside id="projects" class="boxes">
         <!-- list of projects with descriptions and github links -->
         <h3>My very first project: Notes</h3>
         <p>My first HTML/CSS project was a simple page containing notes.</p>
-        <a href="https://liibaanhalane.github.io/prework-study-guide/"><img src="./assets/PreworkStudyGuide.png" alt="Screenstot of notes, 4 sections, HTML, git, CSS" height="200" length="400"></a>
+        <a href="https://liibaanhalane.github.io/prework-study-guide/"><img src="./assets/PreworkStudyGuide.png" alt="Screenstot of notes, 4 sections, HTML, git, CSS" height="250" length="500"></a>
         <h3>HTML/CSS clean-up example</h3>
         <p>A sample website with repetitive, unsemantic code was refactored to be cleaner, more accessable, and more easily understood</p>
         <a href="https://liibaanhalane.github.io/Horiseon-SemanticHTMLChallenge/"><img src="./assets/SemanticHTMLexample.png" alt="Screenshot of Horiseon webpage, header and background image" height="200px" length="400"></a>
     </aside>
+    </main>
     <footer>
         <!-- Contact form, link to github -->
         <form action="https://formsubmit.co/liibaanhalane003@gmail.com" method="POST" id="contact">
@@ -61,5 +64,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
             <button type="submit">Submit!</button>
         </form>
         <a href="github.com/LiibaanHalane">My github</a>
+    </footer>
 </body>
 </html>
