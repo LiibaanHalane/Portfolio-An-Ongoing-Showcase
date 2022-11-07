@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
   
+  /*aligns boxes */
   body {
     font-family: Arial;
     margin: 0;
@@ -10,7 +11,8 @@
     min-height: 100vh;
     justify-content: flex-start;
   }
-  
+
+  /* nice dark blue banner, applied to h3 for similar effect*/
   header, h3 {
     padding: 40px;
     text-align: center;
@@ -19,42 +21,39 @@
     width: 100%;
   }
   
+  /* aligns navigation section */
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #d8a47f;
+    padding: 1%;
   }
   
-  nav a {
-    color: #13293d;
+  /* gives padding, makes link text white(easily visible) */
+ a {
+    color: #ffffff;
     padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
   }
   
+  /* aligns footer items, gives background color */
   footer {
     display: flex;
     padding: 20px;
     align-items: centre;
     background: #13293d;
     color: #fff;
-    margin-top: auto;
     justify-content: center;
     flex-direction: row;
   }
   
+  /* creates the main content boxes */
   main {
     display: flex;
   }
 
   p {
     padding: 100px;
-  }
-
-  div {
-    outline: #d8a47f;
-    outline-width: 3px;
   }
   
   .boxes {
@@ -65,15 +64,16 @@
 
   article{
     background-color: #a3b41f;
+    max-width: 50%;
   }
-
+  /* this makes the form big */
   input, button, textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
   }
-
+  /* the main sections change alignment when screen is resized */
   @media screen and (max-width: 768px) {
     main,
     nav,
